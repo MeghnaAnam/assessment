@@ -12,6 +12,7 @@ function App() {
 	}
 
   const clearFormData = () => {
+    console.log("called");
 		return {
 			firstPostCode: "",
 			secondPostCode: ""
@@ -45,7 +46,7 @@ function App() {
         <input
           type="text" 
           id='firstEndpoint'
-          name='firstEndpoint'
+          name='firstPostCode'
           onChange={onFormValueChange}         
           value={formValues.firstPostCode}
         />
@@ -55,7 +56,7 @@ function App() {
           type='text'
           id='secondEndpoint'
           onChange={onFormValueChange}
-          name='secondEndpoint'
+          name='secondPostCode'
           value={formValues.secondPostCode}
         />
         <br/>
